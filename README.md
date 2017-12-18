@@ -17,13 +17,13 @@ This application was developed using [ExpressJS](http://expressjs.com/). MongoDB
 * Create a `.env` file in your root directory as described in `.env.sample` file. Variables such as DB_URL (which must be a mongoDB URL) and PORT are defined in the .env file and it is essential you create this file before running the application.
 ```
 PORT=3000
-DB_URL='mongodb://john:doe@localhost:27017/databaseName'
+DB_URL='mongodb://172.17.0.2:27017/databaseName'
 ```
 * After this, you can then start the server with the command: `npm start`.
 
 ### Testing
 To ensure that your installation is successful you'll need to run tests.
-The command: `npm test` makes this possible. It isn't functional right now, but once it's done you'll be notified via the README.
+The command: `npm test` makes this possible. It is functional right now. 
 
 ### API Documentation
 The API only has one endpoint which is the `/users` endpoint for saving users to the database. The endpoint works with the HTTP verbs: `POST`, `GET`, `PUT`, `DELETE`.
