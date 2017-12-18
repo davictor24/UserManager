@@ -1,0 +1,11 @@
+FROM crud-app
+
+COPY tests tests
+
+ENV NODE_ENV dev
+
+RUN npm update && \
+
+    npm install -g mocha
+
+CMD ["mocha", "tests/test_server.js", "--reporter", "spec"]
