@@ -33,7 +33,7 @@ Note that it is required that you have docker installed on your system.
 To ensure that your installation is successful you'll need to run tests.
 The command: `npm test` makes this possible. It is functional right now. 
 
-Alternatively, you can run the test on a docker container by running the test script with the command `./setup_test.sh`.
+Alternatively, you can run the tests on a docker container by running the test script with the command `./setup_test.sh`.
 
 ### API Documentation
 The API only has one endpoint which is the `/users` endpoint for saving users to the database. The endpoint works with the HTTP verbs: `POST`, `GET`, `PUT`, `DELETE`.
