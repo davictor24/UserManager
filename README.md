@@ -21,9 +21,16 @@ DB_URL='mongodb://172.17.0.2:27017/databaseName'
 ```
 * After this, you can then start the server with the command: `npm start`.
 
+* Alternatively, instead of following the above steps, you can run the setup scripts (in different windows/tabs) with the following commands: 
+`./setup_db.sh` , which sets up and starts the database container, and 
+`./setup_app.sh` , which sets up and starts the app, on the address `http://172.17.0.3:3000`.
+Note that it is required that you have docker installed on your system. 
+
 ### Testing
 To ensure that your installation is successful you'll need to run tests.
 The command: `npm test` makes this possible. It is functional right now. 
+
+Alternatively, you can run the test on a docker container by running the test script with the command `./setup_test.sh`.
 
 ### API Documentation
 The API only has one endpoint which is the `/users` endpoint for saving users to the database. The endpoint works with the HTTP verbs: `POST`, `GET`, `PUT`, `DELETE`.
@@ -111,5 +118,6 @@ password: janedoe
 
 
 
-### Author
+### Authors
 **Olajide Bolaji 'Nuel** - Software Developer at Andela
+**Victor Durojaiye** - Software Developer
